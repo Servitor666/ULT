@@ -1,0 +1,12 @@
+#content-white{
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    font-size: 2em;
+}
+nav.navbar.navbar-inverse {
+    margin-top: 2vh;
+    margin-bottom: 0px;
+    background-color: transparent;
+    border-color: #08080800;
+}
