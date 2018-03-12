@@ -187,7 +187,7 @@ $proizvod = $_GET['a'];
                                 </div>
                             <br><br>
                             <div>
-                                <form method="post" action="add-to-cart.php" style="text-align:center;">
+                                <form method="post" action="add-to-cart.php">
                                     <input type="hidden" name="id" value="<?=$proizvod?>"/>
                                     <button type="submit" id="korpa-dugme" class="text-center hidden-xs hidden-sm hidden-md" style="background-color: black; opacity: 0.5; color: white; height: 50px; width: 200px" type="submit">Dodaj u korpu</button>
                                 </form>
@@ -207,6 +207,12 @@ $proizvod = $_GET['a'];
         </div>
     </div>
 </body>
+<footer style="text-align: center; margin-top: 100px; opacity: 0.5;">
+    <ul style="color: black;">
+        <li><a href="vracanje_uslovi.php">Vracanje majica</a></li>
+        <li><a href="terms-of-service.php">Uslovi koriscenja</a></li>
+    </ul>
+</footer>
 <?php 
 require('footer.php');
 ?>

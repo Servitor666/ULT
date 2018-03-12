@@ -106,7 +106,7 @@ require_once('header.php');
                   <td class="text-center" style="vertical-align: middle; font-weight: 100;"><?=$proizvodi['price']?></td>
                     <td class="text-center" style="vertical-align: middle; font-weight: 100;">XL</td>
                   <td class="text-center" style="vertical-align: middle; font-weight: 100;"><?=$proizvodi['S']?></td>
-                  <td class="text-right" style="width: 12%; vertical-align: middle; font-weight: 100;"><form action="delete_single.php" method="post">     <label id="x-mark"></label><button style="border:none; width:40px;" type="submit" class="btn btn-default dugme-brate">X</button>
+                  <td class="text-right" style="width: 12%; vertical-align: middle; font-weight: 100;"><form action="delete_single.php" method="post"><label id="x-mark"></label><button style="border:none; width:40px;" type="submit" class="btn btn-default dugme-brate">X</button>
                       <input type="hidden" value="<?php $proizvodi['id']?>"/>    </form></td>
                 </tr>
                   <?php
@@ -118,7 +118,12 @@ require_once('header.php');
         </div>
     </div>
 </body>
-
+<footer style="text-align: center; margin-top: 100px; opacity: 0.5;">
+    <ul style="color: black;">
+        <li><a href="vracanje_uslovi.php">Vracanje majica</a></li>
+        <li><a href="terms-of-service.php">Uslovi koriscenja</a></li>
+    </ul>
+</footer>
 <?php
 require_once('footer.php');
 ?>

@@ -116,8 +116,14 @@ echo "</pre>";
             </div>
         </div>
     </div>
+</div>
 </body>
-
+<footer style="text-align: center; margin-top: 100px; opacity: 0.5;">
+    <ul style="color: black;">
+        <li><a href="vracanje_uslovi.php">Vracanje majica</a></li>
+        <li><a href="terms-of-service.php">Uslovi koriscenja</a></li>
+    </ul>
+</footer>
 <?php 
 require('footer.php');
 ?>

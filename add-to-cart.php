@@ -10,8 +10,7 @@ $tshirt = $_POST['id'];
 $product = new Product($dbh);
 $getProduct = $product->getSingleProduct($tshirt);
 
-//$_SESSION['cart'][] = $getProduct;
-array_push($_SESSION['cart'][], $getProduct);
+$_SESSION['cart'][] = $getProduct;
 echo "<pre>";
 var_dump($_SESSION['cart']);
 echo "</pre>";
