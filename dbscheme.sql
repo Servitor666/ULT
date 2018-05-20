@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 21, 2018 at 12:45 AM
+-- Generation Time: May 21, 2018 at 12:58 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.4
 
@@ -34,6 +34,13 @@ CREATE TABLE `clothes_images` (
   `image_url` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `clothes_images`
+--
+
+INSERT INTO `clothes_images` (`ID`, `product_id`, `image_url`) VALUES
+(1, 1, '1');
+
 -- --------------------------------------------------------
 
 --
@@ -41,8 +48,17 @@ CREATE TABLE `clothes_images` (
 --
 
 CREATE TABLE `product` (
-  `ID` bigint(20) UNSIGNED NOT NULL
+  `ID` bigint(20) UNSIGNED NOT NULL,
+  `model` varchar(50) NOT NULL,
+  `price` smallint(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`ID`, `model`, `price`) VALUES
+(1, 'T-Shirt', 1999);
 
 -- --------------------------------------------------------
 
@@ -95,13 +111,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `clothes_images`
 --
 ALTER TABLE `clothes_images`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`

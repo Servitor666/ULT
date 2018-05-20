@@ -99,11 +99,11 @@ $product = new Product($dbh);
                   <?php
                   $products = $product->getAllProducts();
                   foreach($products as $proizvodi){
-                      $singleImage = $product->getSinglePhoto($proizvodi['id']);
+                      $singleImage = $product->getSinglePhoto($proizvodi['ID']);
                   ?>
                 <div class="col-lg-3 text-center">
-                  <a href="#"><a href="artikl_preview.php?a=<?php echo $proizvodi['id']; ?>">
-                    <img class="img-responsive" style="width: 220px; height: 250px; padding: 20px;" src='assets/images/<?=$proizvodi['id'];?>/<?=$singleImage;?>.png' alt="">
+                  <a href="#"><a href="artikl_preview.php?a=<?php echo $proizvodi['ID']; ?>">
+                    <img class="img-responsive" style="width: 220px; height: 250px; padding: 20px;" src='assets/images/<?=$proizvodi['ID'];?>/<?=$singleImage;?>.png' alt="">
                       </a>
                   </a>
                     <p><?=$proizvodi['model']?></p>
