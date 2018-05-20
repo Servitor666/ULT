@@ -13,9 +13,9 @@ require('header.php');
         </div>
         <div class="collapse navbar-collapse fade-in two" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="muzika.php">Muzika</a></li>
-            <li><a href="odeca.php">Odeća</a></li>
-            <li><a href="galerija.php">Galerija</a></li>
+            <li><a href="music.php">Muzika</a></li>
+            <li><a href="browse.php">Odeća</a></li>
+            <li><a href="gallery.php">Galerija</a></li>
           </ul>
         </div>
     </nav>

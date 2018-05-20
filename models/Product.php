@@ -3,7 +3,6 @@
 class Product {
     
     private $db;
-    
     private $sth;
     
     public function __construct($dbh) {
@@ -24,7 +23,6 @@ class Product {
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         
         return $row;
-        
     }
     
     // DOBIJEM ID OD JEBENE PROMENLJIVE NA FRON ENDU TAJ ID UPOTREBIM OVDE PO TOM IDU UZMEM SLIKE
@@ -36,10 +34,10 @@ class Product {
         
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         
-        
-     return $row['image_url'];
+        return $row['image_url'];
         
     }
+
     public function getAllPhotos($id) {
         
         $stmt = $this->db->prepare("SELECT * FROM clothes_images WHERE product_id=".$id);
@@ -48,7 +46,6 @@ class Product {
         $row = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         return $row;
-        
     }
 }
 ?>

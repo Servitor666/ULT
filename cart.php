@@ -1,8 +1,8 @@
 <?php
 require_once('connection.php');
-require_once('models/Product.php');
-$product = new Product($dbh);
+require_once('models/product.php');
 require_once('header.php');
+$product = new Product($dbh);
 ?>
 <body id="content-white">
     <div class="container-fluid">
@@ -120,8 +120,8 @@ require_once('header.php');
 </body>
 <footer style="text-align: center; margin-top: 100px; opacity: 0.5;">
     <ul style="color: black;">
-        <li><a href="vracanje_uslovi.php">Vracanje majica</a></li>
-        <li><a href="terms-of-service.php">Uslovi koriscenja</a></li>
+        <li><a href="terms_of_condition.php">Vracanje majica</a></li>
+        <li><a href="terms_of_service.php">Uslovi koriscenja</a></li>
     </ul>
 </footer>
 <?php

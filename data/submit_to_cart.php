@@ -1,6 +1,6 @@
 <?php
 include_once 'connection.php';
-include_once 'models/Product.php';
+include_once 'models/product.php';
 
 $_SESSION['cart'] = array();
 

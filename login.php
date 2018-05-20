@@ -13,7 +13,7 @@ require('header.php');
         </nav>
     <div class="row gallery">
         <div class="col-lg-2 col-lg-offset-5">
-            <form action="login_script.php" method="POST">
+            <form action="data/submit_login.php" method="POST">
           <div class="form-group">
             <label for="email">Email adresa</label>
             <input name="email" type="email" class="form-control" id="email" aria-describedby="email" placeholder="Unesi Email">
@@ -23,7 +23,7 @@ require('header.php');
             <input name="password"  type="password" class="form-control" id="password" placeholder="Unesi Lozinku">
           </div>
           <div class="form-group">
-                <small id="emailHelp" class="form-text text-muted">Nemate profil? <a href="novi_nalog.php">Registrujte se.</a></small>
+                <small id="emailHelp" class="form-text text-muted">Nemate profil? <a href="register.php">Registrujte se.</a></small>
           </div>
           <button style="background-color: black;" type="submit" class="btn btn-primary">Dalje</button>
             </form>
